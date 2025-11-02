@@ -1,28 +1,96 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Abdul Moeed - Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-    </style>
+    <!-- Link to your new external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <img src="images/your-picture.jpg" alt="A photo of Your Name">
-    <h1>Your Name</h1>
-    <p>
-      Welcome to my personal website! I am a [Your Role] passionate about [Your Passion].
-      Find me on <a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn</a> 
-      or check out my code on <a href="https://github.com/your-username" target="_blank">GitHub</a>.
-    </p>
-  </header>
+
+    <!-- Header Section with Picture, Name, and Links -->
+    <header>
+        <!-- 
+          Create an 'images' folder in your project, 
+          add your picture (e.g., 'profile.jpg'), and update the src path.
+        -->
+        <img src="images/profile.jpg" alt="Muhammad Abdul Moeed" class="profile-pic"
+             onerror="this.style.display='none'"> <!-- Hides the image if it fails to load -->
+
+        <h1>Muhammad Abdul Moeed</h1>
+        <p>MSc Student at Technical University of Munich</p>
+        
+        <!-- Links to your CV and social profiles -->
+        <div class="header-links">
+            <!-- 
+              Create a 'docs' folder, add your CV (e.g., 'cv.pdf'), 
+              and update the href path.
+            -->
+            <a href="docs/your-cv.pdf" target="_blank">View CV</a>
+            
+            <!-- Update the href with your actual LinkedIn profile URL -->
+            <a href="https://www.linkedin.com/in/your-profile-url" target="_blank">LinkedIn</a>
+            
+            <!-- Update the href with your actual GitHub profile URL -->
+            <a href="https://github.com/your-username" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+
+        <!-- About Me Section -->
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Muhammad Abdul Moeed. Welcome to my personal website. 
+                I am an MSc student at the Technical University of Munich, focusing on 
+                [Your Area of Focus]. I am passionate about [Your Interest 1] and 
+                [Your Interest 2].
+            </p>
+            <!-- Add more paragraphs as needed -->
+            <p>
+                Feel free to browse my projects or get in touch via LinkedIn.
+            </p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>My Projects</h2>
+
+            <!-- Project 1 -->
+            <article class="project-item">
+                <h3>Project Title 1</h3>
+                <p>
+                    A brief description of your project. What was the goal? 
+                    What technologies did you use (e.g., Python, JavaScript, etc.)?
+                </p>
+                <a href="[Link to your project on GitHub or live demo]" target="_blank">View Project</a>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-item">
+                <h3>Project Title 2</h3>
+                <p>
+                    A brief description of your second project. This could be a 
+                    research paper, a software tool, or a group collaboration.
+                </p>
+                <a href="[Link to your project]" target="_blank">View Project</a>
+            </article>
+
+            <!-- Add more <article> blocks for more projects -->
+
+        </section>
+
+    </main>
+
+    <!-- A simple footer -->
+    <footer>
+        <p style="text-align: center; color: #888; margin-top: 40px;">
+            &copy; 2025 Muhammad Abdul Moeed
+        </p>
+    </footer>
+
 </body>
 </html>
